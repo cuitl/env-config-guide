@@ -30,6 +30,10 @@
 
 scoop bucket add extras
 
+### add font bucket
+
+scoop bucket add nerd-fonts
+
 ### 代理配置
 
 > scoop可以配置代理，用来进行安装提速, 如：
