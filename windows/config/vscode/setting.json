@@ -1,0 +1,478 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": -1,
+  // 编辑上方命令搜索面板 - 不显示
+  "window.commandCenter": false,
+
+  "workbench.colorTheme": "Monokai",
+  "workbench.settings.settingsSearchTocBehavior": "hide",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+
+  // 光标样式
+  "editor.cursorBlinking": "solid",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#528bff",
+    "statusBar.background": "#060505",
+    "statusBar.noFolderBackground": "#060505",
+    "statusBar.debuggingBackground": "#060505",
+    "statusBar.foreground": "#ffe7e7",
+    "statusBar.debuggingForeground": "#ffe7e7"
+  },
+
+  // #region background image config start
+
+  "background.editor": {
+    "useFront": false,
+    "style": {
+      "background-position": "100% 100%",
+      "background-size": "auto",
+      "opacity": 0.5
+    },
+    // "styles": [
+    //   {},
+    //   {},
+    //   {}
+    // ],
+    "images": [
+      "file:///C:/Users/space/Pictures/background/35.jpg",
+      "file:///C:/Users/space/Pictures/background/12.jpg",
+    ],
+    "interval": 0,
+    "random": false
+  },
+
+  "background.fullscreen": {
+    "images": [
+      "file:///C:/Users/space/Pictures/background/35.jpg",
+      "file:///C:/Users/space/Pictures/background/12.jpg",
+    ],
+    "opacity": 0.5,
+    "size": "cover",
+    "position": "center",
+    "interval": 0,
+    "random": false
+  },
+  // #endregion background image config end
+
+  // #region vim 插件配置 start
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.useCtrlKeys": true,
+  "vim.searchHighlightColor": "rgba(222, 77, 82, 0.7)",
+  "vim.easymotion": true,
+  "vim.sneak": false,
+  "vim.visualstar": true,
+  "vim.foldfix": true,
+  "vim.leader": "<space>",
+
+  "vim.enableNeovim": true,
+  // neovim 的路径 FIXED
+  "vim.neovimPath": "C:\\Users\\space\\scoop\\shims\\nvim.exe",
+
+  // "vim.easymotionMarkerBackgroundColor": "blue",
+  "vim.easymotionMarkerBackgroundColor": "transparent",
+  "vim.easymotionMarkerForegroundColorOneChar": "#e70474",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#03ddfc",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#2b7c9d",
+
+  // "vim.autoSwitchInputMethod.enable": true,
+  // "vim.autoSwitchInputMethod.defaultIM": "1033",
+  // "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\computer\\E\\programs\\tools\\bin\\im-select.exe",
+  // "vim.autoSwitchInputMethod.switchIMCmd": "C:\\computer\\E\\programs\\tools\\bin\\im-select.exe {im}",
+
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-v>": false,
+    // "<C-d>": true,
+    "<C-x>": false,
+    "<C-f>": false,
+    "<C-y>": false,
+    "<C-n>": false,
+    "<C-k>": false,
+    "<C-w>": false
+  },
+
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["\\", "b"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.toggleSidebarVisibility",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["\\", "v"],
+      "after": [],
+      "commands": [
+        {
+          "command": "extension.vim_ctrl+v",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["\\", "a"],
+      "after": [],
+      "commands": [
+        {
+          "command": "extension.vim_ctrl+a",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["\\", "f"],
+      "after": [],
+      "commands": [
+        {
+          "command": "extension.vim_ctrl+f",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["g", "t"],
+      "after": [],
+      "commands": [
+        {
+          "command": "extension.vim_ctrl+pagedown",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<Tab>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "extension.vim_ctrl+pagedown",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["g", "<"],
+      "commands": [
+        {
+          "command": "workbench.action.moveEditorLeftInGroup",
+          "args": []
+        }
+      ]
+    },
+
+    {
+      "before": ["g", ">"],
+      "commands": [
+        {
+          "command": "workbench.action.moveEditorRightInGroup",
+          "args": []
+        }
+      ]
+    },
+
+    {
+      "before": ["<leader>", ">"],
+      "commands": [
+        {
+          "command": "workbench.action.moveEditorToNextGroup",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "<"],
+      "commands": [
+        {
+          "command": "workbench.action.moveEditorToPreviousGroup",
+          "args": []
+        }
+      ]
+    },
+
+    {
+      "before": ["<leader>", "t"],
+      "commands": [
+        {
+          "command": "workbench.action.toggleEditorWidths",
+          "args": []
+        }
+      ]
+    },
+
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["bookmarks.toggle"]
+    },
+
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+
+    {
+      "before": ["leader", "x"],
+      "commands": ["workbench.action.terminal.killEditor"]
+    },
+
+    {
+      "before": ["<leader>", "0"],
+      "commands": ["workbench.action.focusSideBar"]
+    },
+
+    {
+      "before": ["<leader>", "1"],
+      "commands": ["workbench.action.focusFirstEditorGroup"]
+    },
+
+    {
+      "before": ["<leader>", "2"],
+      "commands": ["workbench.action.focusSecondEditorGroup"]
+    },
+    {
+      "before": ["<leader>", "3"],
+      "commands": ["workbench.action.focusThirdEditorGroup"]
+    },
+
+    {
+      "before": ["<leader>", "4"],
+      "commands": ["workbench.action.focusFourthEditorGroup"]
+    },
+
+    {
+      // s 映射到 定位两个字母 
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "2", "s"]
+    },
+    {
+      "before": ["<leader>", "j", "j"],
+      "after": ["<leader>", "<leader>", "s"]
+    },
+
+    {
+      "before": ["<leader>", "j", "J"],
+      "after": ["<leader>", "<leader>", "/"]
+    },
+
+    {
+      "before": ["<leader>", "j", "l"],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d", "j", "k"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.toggleSidebarVisibility",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": [],
+      "commands": ["textmarker.toggleHighlight"]
+    },
+
+    {
+      // 匹配光标的单词,并添加光标
+      "before": ["g", "B"],
+      "commands": ["editor.action.selectHighlights"]
+    },
+
+    {
+      "before": ["<leader>", "k", "e"],
+      "commands": ["workbench.action.keepEditor"]
+    },
+
+    // flash nvim 快速跳转 start
+    {
+      // "before": ["f"],
+      "before": ["s"],
+      "commands": ["flash-vscode.start"]
+    },
+    {
+      "before": ["F"],
+      "commands": ["flash-vscode.startSelection"]
+    },
+    {
+      "before": ["t"],
+      "commands": ["flash-vscode.jump.treesitterSelection"]
+    },
+    {
+      "before": ["T"],
+      "commands": ["flash-vscode.remoteTreesitterSelection"]
+    },
+    {
+      "before": [ "<BS>" ],
+      "commands": [ "flash-vscode.backspace" ]
+    },
+    {
+      "before": [ "<Esc>" ],
+      "commands": [ "flash-vscode.exit" ]
+    }
+    // flash nvim 快速跳转 end
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    },
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["editor.action.insertCursorAtEndOfEachLineSelected"]
+    },
+
+    {
+      // 匹配所有选中的单词并添加光标
+      "before": ["g", "B"],
+      "commands": ["editor.action.selectHighlights"]
+    }
+  ],
+
+  "vim.statusBarColorControl": false, // status bar 颜色控制 - 关闭
+  "vim.statusBarColors.normal": ["#060505", "#ffe7e7"],
+  "vim.statusBarColors.insert": ["#060505", "#adfb83"],
+  "vim.statusBarColors.visual": ["#50556f", "#ffffff"],
+  "vim.statusBarColors.visualline": ["#50556f", "#ffffff"],
+  "vim.statusBarColors.visualblock": ["#50556f", "#ffffff"],
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#063250",
+  "vim.statusBarColors.searchinprogressmode": "#063250",
+  "vim.statusBarColors.easymotionmode": "#063250",
+  "vim.statusBarColors.easymotioninputmode": "#063250",
+  "vim.statusBarColors.surroundinputmode": "#063250",
+
+  // plugin: flash nvim for vscode config
+  "flash-vscode.caseSensitive": false,
+  "flash-vscode.dimOpacity": "0.55",
+  "flash-vscode.matchColor": "cyan",
+  "flash-vscode.matchFontWeight": "bold",
+  "flash-vscode.labelColor": "#ff4343",
+  "flash-vscode.labelBackgroundColor": "transparent",
+  "flash-vscode.labelQuestionBackgroundColor": "#3E68D7",
+  "flash-vscode.labelFontWeight": "bold",
+  "flash-vscode.labelKeys": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}|;:'\",.<>/?",
+
+  // #endregion vim 插件配置 end
+
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true,
+
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Bash": {
+      // bash.exe 的路径 FIXED
+      "path": ["C:\\Users\\space\\scoop\\apps\\git\\current\\bin\\bash.exe"],
+      "args": [],
+      "icon": "terminal-bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Bash",
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+  },
+
+  "eslint.run": "onSave",
+  "prettier.printWidth": 150,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "none",
+
+  "leetcode.endpoint": "leetcode-cn",
+
+  "files.associations": {
+    "*.env.*": "env"
+  },
+
+  "editor.smoothScrolling": false,
+  "editor.quickSuggestionsDelay": 20,
+  "editor.columnSelection": false,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.fontSize": 18,
+  "editor.fontWeight": "100",
+  // "editor.fontFamily": "Consolas, 'Courier New', monospacegt",
+  // "editor.fontFamily": "'Courier New', Consolas, monospacegt",
+  // "editor.fontFamily": "'MesloLGM Nerd Font', Consolas, monospacegt",
+  // "editor.fontFamily": "'FantasqueSansM Nerd Font', Consolas, monospacegt",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', Consolas, monospacegt",
+  // "editor.fontFamily": "'FiraCode Nerd Font', Consolas, monospacegt",
+  // "editor.fontFamily": "'Cascadia Code', Consolas, monospacegt",
+  // "editor.fontFamily": "'MonaspiceRn Nerd Font', Consolas, monospacegt",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.stickyScroll.enabled": false,
+
+  "powermode.enabled": true,
+  "powermode.shake.enabled": false,
+  "powermode.explosions.size": 18,
+  "powermode.explosions.explosionOrder": "random",
+  "powermode.combo.counterEnabled": "hide",
+  "powermode.combo.counterSize": 0,
+  "powermode.combo.location": "off",
+}
