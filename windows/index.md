@@ -24,6 +24,13 @@
     # 拉取新库地址
     scoop update
 
+    # 查看 bucket
+    scoop bucket list
+
+    # bucket 不符合预期 - 删除 + 重新添加
+    scoop bucket rm [bucket]
+    scoop bucket add [bucket]
+
 ```
 
 ### 支持安装图形界面的常用软件:
