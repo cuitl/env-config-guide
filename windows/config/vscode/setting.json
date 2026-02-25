@@ -1,7 +1,7 @@
 // 将设置放入此文件中以覆盖默认设置
 {
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -1.3,
   // 编辑上方命令搜索面板 - 不显示
   "window.commandCenter": false,
 
@@ -35,19 +35,13 @@
     //   {},
     //   {}
     // ],
-    "images": [
-      "file:///C:/Users/space/Pictures/background/35.jpg",
-      "file:///C:/Users/space/Pictures/background/12.jpg",
-    ],
+    "images": ["file:///C:/Users/space/Pictures/background/35.jpg", "file:///C:/Users/space/Pictures/background/12.jpg"],
     "interval": 0,
     "random": false
   },
 
   "background.fullscreen": {
-    "images": [
-      "file:///C:/Users/space/Pictures/background/35.jpg",
-      "file:///C:/Users/space/Pictures/background/12.jpg",
-    ],
+    "images": ["file:///C:/Users/space/Pictures/background/35.jpg", "file:///C:/Users/space/Pictures/background/12.jpg"],
     "opacity": 0.5,
     "size": "cover",
     "position": "center",
@@ -235,6 +229,15 @@
       "before": ["leader", "x"],
       "commands": ["workbench.action.terminal.killEditor"]
     },
+    {
+      "before": ["leader", "f", "m"],
+      "commands": ["editor.action.formatDocument"]
+    },
+
+    {
+      "before": ["leader", "f", "c"],
+      "commands": ["workbench.action.showCommands"]
+    },
 
     {
       "before": ["<leader>", "0"],
@@ -261,7 +264,7 @@
     },
 
     {
-      // s 映射到 定位两个字母 
+      // s 映射到 定位两个字母
       "before": ["s"],
       "after": ["<leader>", "<leader>", "2", "s"]
     },
@@ -325,12 +328,12 @@
       "commands": ["flash-vscode.remoteTreesitterSelection"]
     },
     {
-      "before": [ "<BS>" ],
-      "commands": [ "flash-vscode.backspace" ]
+      "before": ["<BS>"],
+      "commands": ["flash-vscode.backspace"]
     },
     {
-      "before": [ "<Esc>" ],
-      "commands": [ "flash-vscode.exit" ]
+      "before": ["<Esc>"],
+      "commands": ["flash-vscode.exit"]
     }
     // flash nvim 快速跳转 end
   ],
@@ -406,7 +409,6 @@
   "terminal.integrated.defaultProfile.windows": "Bash",
   "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
 
-
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -434,7 +436,7 @@
   },
   "[python]": {
     "editor.tabSize": 4,
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
 
   "eslint.run": "onSave",
@@ -442,8 +444,6 @@
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "none",
-
-  "leetcode.endpoint": "leetcode-cn",
 
   "files.associations": {
     "*.env.*": "env"
@@ -474,5 +474,5 @@
   "powermode.explosions.explosionOrder": "random",
   "powermode.combo.counterEnabled": "hide",
   "powermode.combo.counterSize": 0,
-  "powermode.combo.location": "off",
+  "powermode.combo.location": "off"
 }

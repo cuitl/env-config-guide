@@ -1,79 +1,84 @@
 // 将键绑定放入此文件中以覆盖默认值
 [
-    {
-        "key": "ctrl+F2",
-        "command": "bookmarks.toggle",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "F2",
-        "command": "bookmarks.jumpToNext",
-        "when": "editorTextFocus"
-    },
+  {
+    "key": "ctrl+F2",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "F2",
+    "command": "bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
 
-    {
-        "key": "F3",
-        "command": "bookmarks.jumpToPrevious",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+c",
-        "command": "editor.action.clipboardCopyAction",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+oem_2",
-        "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+space",
-        "command": "-editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+t",
-        "command": "workbench.action.toggleEditorWidths"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.togglePanel",
-    },
-    {
-        "key": "ctrl+h",
-        "command": "textmarker.toggleHighlight",
-        "when": "editorTextFocus"
-    },
+  {
+    "key": "F3",
+    "command": "bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+oem_2",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+t",
+    "command": "workbench.action.toggleEditorWidths"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "textmarker.toggleHighlight",
+    "when": "editorTextFocus"
+  },
 
-    // 从第一个editor分组 移动到 文件树
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.focusSideBar",
-        "when": "activeEditorGroupIndex == 1 && foldersViewVisible && !editor.hasSelection"
-    },
-    // 移动到上一个 editor分组
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.focusPreviousGroup",
-        "when": "activeEditorGroupIndex != 1 && !editor.hasSelection"
-    },
+  // 从第一个editor分组 移动到 文件树
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusSideBar",
+    "when": "activeEditorGroupIndex == 1 && foldersViewVisible && !editor.hasSelection"
+  },
+  // 移动到上一个 editor分组
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusPreviousGroup",
+    "when": "activeEditorGroupIndex != 1 && !editor.hasSelection"
+  },
 
-    // 从文件树 移动到 第一个 editor分组
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.focusFirstEditorGroup",
-        "when": "filesExplorerFocus && foldersViewVisible && !inputFocus && !editorFocus"
-    },
-    // 移动到下一个 editor分组
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.focusNextGroup",
-        "when": "!filesExplorerFocus && !activeEditorGroupLast && editorTextFocus"
-    },
-    // 文件树 - 打开并聚焦到 editor
-    {
-        "key": "shift+o",
-        "command": "explorer.openAndPassFocus",
-        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
-    },
+  // 从文件树 移动到 第一个 editor分组
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "filesExplorerFocus && foldersViewVisible && !inputFocus && !editorFocus"
+  },
+  // 移动到下一个 editor分组
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusNextGroup",
+    "when": "!filesExplorerFocus && !activeEditorGroupLast && editorTextFocus"
+  },
+  // 文件树 - 打开并聚焦到 editor
+  {
+    "key": "shift+o",
+    "command": "explorer.openAndPassFocus",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-flash-vscode.startSelection",
+    "when": "editorIsOpen || editorFocus && flash-vscode-mode == 'idle'"
+  }
 ]
